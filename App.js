@@ -48,9 +48,9 @@ catch (error) {
     style={style.picker}
     onValueChange={(itemValue) => setSelectedValue(itemValue)}
     >
-      <Picker.item label="Opção 1" value="option1" />
-      <Picker.item label="Opção 2" value="option2" />
-      <Picker.item label="Opção 3" value="option3" />
+      <Picker.Item label="Opção 1" value="option1" />
+      <Picker.Item label="Opção 2" value="option2" />
+      <Picker.Item label="Opção 3" value="option3" />
     </Picker>
   </View>
  );
