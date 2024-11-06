@@ -8,15 +8,20 @@ export default function App() {
   const [data, setData] = useState(null);//armazenar dado da API
 
   //função para buscar dados da API
-  const fetchData = async () => {
-    try {
-      const response = await axios.get('https://api.example.com/data');
-      setData(response.data);
-    } catch (error) {
-      console.error('Erro ao buscar dados:', error);
-    }
-  };
+ const fetchData = async () => { 
+try {
+const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1&#39;); // Teste com API pública de exemplo
+setData(response.data.title); // Modificado para evitar erros de dados não definidos
+} 
+catch (error) { 
+ console.error('Erro ao buscar dados:', error); 
+ } 
+ };  
 
+  <Image 
+  source={{ uri: 'https://via.placeholder.com/200&#39; }} 
+  style={styles.image}/> 
+    
  useEffect(() => {
   fetchData();//chama API quando o app é carregado
  }, []);
